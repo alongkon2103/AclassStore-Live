@@ -3,3 +3,4 @@ TikTokLive
 requests
 nuitka
 zstandard
+piratetok-live-py
