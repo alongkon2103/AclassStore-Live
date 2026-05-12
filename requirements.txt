@@ -4,3 +4,4 @@ requests
 nuitka
 zstandard
 piratetok-live-py
+urllib3
