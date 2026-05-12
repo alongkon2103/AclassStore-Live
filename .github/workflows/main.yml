@@ -26,10 +26,12 @@ jobs:
 
     - name: Build EXE with PyInstaller
       run: |
-        pyinstaller --noconsole --onedir --icon=LogoV.ico AclassStoreLive.py
+        # เปลี่ยนจาก --onedir เป็น --onefile
+        pyinstaller --noconsole --onefile --icon=LogoV.ico AclassStoreLive.py
 
     - name: Upload EXE as Artifact
       uses: actions/upload-artifact@v4
       with:
         name: AclassStoreLive-Windows
-        path: dist/AclassStoreLive/
+        # ระบุ path ไปที่ตัวไฟล์ .exe โดยตรงในโฟลเดอร์ dist
+        path: dist/AclassStoreLive.exe
