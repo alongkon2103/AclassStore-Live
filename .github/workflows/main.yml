@@ -25,7 +25,7 @@ jobs:
 
     - name: Build EXE with Nuitka
       run: |
-        python -m nuitka --standalone --windows-disable-console --enable-plugin=pyqt5 --windows-icon-from-ico=LogoV.ico AclassStoreLive.py
+        python -m nuitka --assume-yes-for-downloads --standalone --windows-console-mode=disable --enable-plugin=pyqt5 --windows-icon-from-ico=LogoV.ico AclassStoreLive.py
 
     - name: Upload EXE as Artifact
       uses: actions/upload-artifact@v4
