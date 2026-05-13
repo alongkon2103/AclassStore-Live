@@ -367,14 +367,12 @@ QLabel#brandSub {
     font-size: 11px;
 }
 QFrame#pillOffline {
-    background-color: #12202e;
     border: 1px solid #1a3045;
     border-radius: 14px;
 }
 QLabel#dotOffline { color: #8b3a3a; font-size: 9px; }
 QLabel#statOffline { color: #3a5470; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
 QFrame#pillOnline {
-    background-color: #0d2010;
     border: 1px solid #1a4020;
     border-radius: 14px;
 }
